@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
     <!-- Custom CSS Styles -->
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -30,9 +32,33 @@
         </div>
     </header>
 
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a href="/index.html" class="nav-link"><i class="fa fa-home fa-lg"></i>
+                            Home</a></li>
+                    <li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-info fa-lg"></i> About</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a href="/contact.html" class="nav-link"><i
+                                class="fa fa-address-card fa-lg"></i>
+                            Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row ">
             <div class="col">
+                <ol class="breadcrumb ">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About Us</li>
+                </ol>
                 <h2>About Us</h2>
                 <hr />
             </div>
@@ -78,22 +104,27 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Sites</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a href="http://instagram.com/">Instagram</a>
-                    <a href="http://facebook.com/">Facebook</a>
-                    <a href="http://twitter.com/">Twitter</a>
-                    <a href="http://youtube.com/">YouTube</a>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    Tel: 1-206-555-1234<br />
-                    Email: campsites@nucamp.co
+                    <a href="tel:+12065551234" class="btn btn-link"><i class="fa fa-phone" role="button"></i>
+                        1-206-555-1234</a><br>
+                    <a href="mailto:campsites@nucamp.co" class="btn btn-link"><i class="fa fa-envelope-o"
+                            role="button"></i> campsites@nucamp.co</a>
                 </div>
             </div>
-        </div>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
