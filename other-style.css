@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --rich-black-fogra-29: #0e1117ff;
+--rich-black-fogra-29-2: #0f1319ff;
+--rich-black-fogra-29-3: #11151cff;
+--rich-black-fogra-29-4: #131821ff;
+--rich-black-fogra-29-5: #151b25ff;
+--raisin-black: #19212eff;
+--oxford-blue: #1d2737ff;
+--prussian-blue: #212d40ff;
+--charcoal: #364156ff;
+--independence: #485265ff;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: var(--independence);
+}
+
+.jumbotron{
+    background-image: linear-gradient(to right, #0e1117ff, #364156ff   );
+    margin: 0;
+}
+
+.navbar{
+    background-color: var(--raisin-black);
+    
+}
+
+.site-footer{
+    background-image: linear-gradient( #0e1117ff, #364156ff   );
+}
+.row-content{
+    padding: 50PX 0;
+    border-bottom: 1px ridge #19212eff;
+    min-height: 200px;
+}
+
+.row-content:last-of-type{
+    border: none;
+}
+
+.card{
+    border: black;
+}
+.card-body{
+    background-color:#212d40ff ;
+    
+}

@@ -7,16 +7,20 @@
     <!-- Required meta tags always come first -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css css/main.css -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- endbuild -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <!-- Custom CSS Styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -25,17 +29,26 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row ">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html">
+                        <img src="img/logo.png" class="img-fluid" alt="">
+                    </a>
+                </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
             </div>
+
         </div>
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" height="30" width="30">
+            </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,8 +70,7 @@
         <div class="row">
             <div class="col">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a
-                            href="https://learn.nucamp.co/pluginfile.php/19013/mod_book/chapter/3108/index.html">Home</a>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a>
                     </li>
                     <li class="breadcrumb-item active">Contact</li>
                 </ol>
@@ -128,12 +140,14 @@
                         <div class="col offset-md-2">
                             May We Contact You?
                             <div class="form-check form-check-inline">
-                                <input id="contactYes" type="radio" name="contactRadios" value="yes"><label
-                                    for="contactYes">Yes</label>
+                                <input class="form-check-input" id="contactYes" type="radio" name="contactRadios"
+                                    value="yes">
+                                <label class="form-check-label" for="contactYes">Yes</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input id="contactNo" type="radio" name="contactRadios" value="no"><label
-                                    for="contactNo">No</label>
+                                <input class="form-check-input" id="contactNo" type="radio" name="contactRadios"
+                                    value="no">
+                                <label class="form-check-label" for="contactNo">No</label>
                             </div>
                         </div>
                     </div>
@@ -146,16 +160,17 @@
                     </div>
                     <div class="row">
                         <div class="col-md-10 offset-md-2">
-                            <button type="submit">Send Feedback</button>
+                            <button class="btn btn-primary" type="submit">Send Feedback</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
 
+
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
@@ -193,9 +208,12 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="./contact_files/jquery.slim.min.js.download"></script>
-    <script src="./contact_files/popper.min.js.download"></script>
-    <script src="./contact_files/bootstrap.min.js.download"></script>
+    <!-- build:js js/main.js-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <!-- endbuild -->
 
 
 
