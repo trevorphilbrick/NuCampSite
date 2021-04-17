@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
-    // "copycss": "copyfiles -f css/styles.css dist/css",
+    "copycss": "copyfiles -f css/styles.css dist/css",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "copyfa": "copyfiles -f node_modules/font-awesome/css/font-awesome.min.css dist/css",
     "copyboot": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css dist/css",
