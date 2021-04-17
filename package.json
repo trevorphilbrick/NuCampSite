@@ -4,10 +4,11 @@
   "description": "This is a website for a fictional campsites review site, Nucamp",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run usemin && npm run copyfonts && npm run copyboot && npm run copysocial && npm run copyfa && npm run copyjquery && npm run copypopper && npm run copybootjs && npm run copyhtml",
+    "build": "npm run clean && npm run imagemin && npm run usemin && npm run copycss && npm run copyfonts && npm run copyboot && npm run copysocial && npm run copyfa && npm run copyjquery && npm run copypopper && npm run copybootjs && npm run copyhtml",
     "clean": "rimraf dist",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
+    "copycss": "copyfiles -f css/styles.css dist/css",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "copyfa": "copyfiles -f node_modules/font-awesome/css/font-awesome.min.css dist/css",
     "copyboot": "copyfiles -f node_modules/bootstrap/dist/css/bootstrap.min.css dist/css",
