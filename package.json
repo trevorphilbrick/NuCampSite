@@ -4,7 +4,7 @@
   "description": "This is a website for a fictional campsites review site, Nucamp",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run usemin && npm run copyfonts && npm run copyboot && npm run copysocial && npm run copyfa && npm run copyjquery && npm run copypopper && npm run copybootjs && npm run copyhtml",
+    "build": "npm run clean && npm run imagemin && npm run usemin && npm run copycss && npm run copyfonts && npm run copyboot && npm run copysocial && npm run copyfa && npm run copyjquery && npm run copypopper && npm run copybootjs && npm run copyhtml",
     "clean": "rimraf dist",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
