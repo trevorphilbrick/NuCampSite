@@ -16,7 +16,7 @@
     "copyjquery": "copyfiles -f node_modules/jquery/dist/jquery.slim.min.js dist/js",
     "copypopper": "copyfiles -f node_modules/popper.js/dist/umd/popper.min.js dist/js",
     "copybootjs": "copyfiles -f node_modules/bootstrap/dist/js/bootstrap.min.js dist/js",
-    "copyhtml": "copyfiles index.html dist && contact.html dist && aboutus.html dist",
+    "copyhtml": "copyfiles index.html dist && copyfiles contact.html dist && copyfiles aboutus.html dist",
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "start": "npm run watch:all",
